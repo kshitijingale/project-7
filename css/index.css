@@ -7,7 +7,6 @@
 
 nav {
   display: flex;
-  width: 100vw;
   padding: 10px 10px;
   justify-content: space-between;
   margin-top: 30px;
@@ -17,11 +16,6 @@ nav img {
   flex: 1;
   height: 40px;
   margin-top: 20px;
-}
-
-.logo {
-  position: relative;
-  right: 20px;
 }
 
 .nav-items {
@@ -41,6 +35,10 @@ nav img {
   font-family: 'Fredoka+One', sans-serif !important;
   color: #ee5c36;
   font-size: 22px !important;
+}
+
+.drop-btn {
+  display: none;
 }
 
 /* intro-section */
@@ -188,4 +186,62 @@ nav img {
 
 .right-section button {
   margin: 10px auto auto 35px;
+}
+
+@media screen and (max-width: 1040px) {
+  nav {
+    margin: 20px 44px;
+  }
+
+  nav .nav-items,
+  nav img:last-of-type {
+    display: none;
+  }
+
+  nav img {
+    flex: 0;
+  }
+
+  .drop-btn {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+  }
+
+  .intro-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .right-section {
+    text-align: center;
+  }
+
+  .headphone {
+    right: 0;
+  }
+
+  .discount {
+    right: auto;
+  }
+
+  .headphone-div {
+    flex-direction: column;
+  }
+
+  .discount-content {
+    position: relative;
+    top: auto;
+    bottom: 158px;
+    right: 158px;
+  }
+
+  .action-btn {
+    margin-bottom: 20px;
+  }
+
+  .dots {
+    margin: 10px auto;
+  }
 }
